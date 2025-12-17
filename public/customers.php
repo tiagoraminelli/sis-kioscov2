@@ -83,6 +83,18 @@ $clientes = $stmt->fetchAll();
     <title>Clientes - <?php echo APP_NAME; ?></title>
     <script src="assets/js/tailwindcss.js"></script>
     <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+    <style>
+    .sidebar-link {
+        @apply flex items-center gap-3 px-4 py-2 rounded-lg text-blue-100 hover:bg-white/10 hover:text-white transition;
+    }
+    .sidebar-link i {
+        @apply text-lg w-5 text-center;
+    }
+    .sidebar-link.active {
+        @apply bg-white/20 text-white shadow;
+    }
+</style>
+
 </head>
 
 <body class="bg-gray-100">
