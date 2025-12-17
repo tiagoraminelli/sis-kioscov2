@@ -4,8 +4,11 @@
  * Uso: include __DIR__ . '/../includes/sidebar.php';
  */
 
+// Asegurarse de que la sesión esté iniciada
+
 $currentPage = basename($_SERVER['PHP_SELF'], '.php');
 $userName = $_SESSION['nombre'] ?? $_SESSION['username'];
+
 ?>
 
 <aside class="fixed top-0 left-0 h-screen w-64 bg-gradient-to-b from-blue-600 to-purple-600 text-white shadow-lg z-50 flex flex-col">
